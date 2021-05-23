@@ -1,19 +1,23 @@
 //
 //  AppDelegate.swift
-//  Instagram
+//  s
 //
 //  Created by 松本光輝 on 2021/04/05.
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // SVProgressHUDをXcode11以上で実行するための環境調整コード
+        var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
